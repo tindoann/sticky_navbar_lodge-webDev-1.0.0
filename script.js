@@ -46,3 +46,24 @@ function highlightleave(){
 
 trigger.forEach(a => a.addEventListener('mouseenter', highlightlink));
 wrapper.addEventListener('mouseleave', highlightleave);
+
+// Registration checks if the user is require to enter 5 or more characters
+
+function validate() {                            // Declare function
+  var elusername = document.getElementById("username"); 
+  var elpassword = document.getElementById("password"); 
+
+  if(elusername.value.trim() =="" || elpassword.value.trim()=="")
+  {
+      alert("Please retry"); 
+      return false; 
+  }
+  else 
+  {
+      true; 
+  }
+}
+  
+  Username = document.getElementById('username'); // Get username input
+  elUsername.onblur = checkUsername;  // When it loses focus call checkuserName()
+
